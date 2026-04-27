@@ -5,32 +5,24 @@ import com.narxoz.rpg.state.HeroState;
 
 public class NormalState implements HeroState {
 
-    @Override
     public String getName() {
         return "Normal";
     }
 
-    @Override
     public int modifyOutgoingDamage(int basePower) {
         return basePower;
     }
 
-    @Override
     public int modifyIncomingDamage(int rawDamage) {
         return rawDamage;
     }
 
-    @Override
     public void onTurnStart(Hero hero) {
-        // Nothing special
     }
 
-    @Override
     public void onTurnEnd(Hero hero) {
-        // Nothing special
     }
 
-    @Override
     public boolean canAct() {
         return true;
     }
